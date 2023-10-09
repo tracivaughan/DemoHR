@@ -1,0 +1,429 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request access -- Access Rights Management Application | University of Illinois System </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <aside id="skip"><a href="#main">skip to content</a></aside>
+    <header>
+
+        <div class="topbrand">
+            <div class="grid-x">
+                <div class="brand cell medium-4 small-order-2 medium-order-1"><img src="img/sys-logo.png"
+                        alt="University of Illinois System" class="syslogo">
+                </div>
+                <div class="cell medium-8 userblock small-order-1 medium-order-2">
+                    <a href="settings.html" class="button clear prefs" aria-label="Preferences"><img src="img/prefs.png"
+                            alt="Preferences"></a>
+
+
+                    <span>Billy Donovan <span class="sdetail"> (658884541)</span></span>
+
+
+
+                    <a href="logout" class="button log-btn">Log out</a>
+                </div>
+
+            </div>
+
+            <div class="grid-x">
+                <div class="cell medium-12 appname">
+                    <a href="dash.html"> <img src="img/appname.png" alt="Access Rights Management application"></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="inbox.html">Pending Requests</a> </li>
+                    <li><a href="">Look Up Access</a></li>
+                    <li><a href="">Request / Change Access</a> </li>
+                    <li><a href="">Reports</a> </li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main id="main">
+        <div class="grid-container">
+
+            <h1>Requesting and editing access</h1>
+
+
+            <div class="req-process-results bodycard">
+
+                <section>
+
+                    <div class="change-single">
+
+                        <!-- add is-sysacct below if this is a system acct-->
+                        <div class="profile-single is-person">
+                            <div class="profile-type  min-profile grid-x">
+                                <div class="profile-type-name">
+                                    <h2>Zach LaVine</h2>
+
+                                </div>
+
+                                <div class="profile-type-flags">
+                                    <div><strong>zlavine</strong> / 65214551</div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="redo-search">
+                            <a href="back-to-search" class="cancel-link">Cancel</a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid-x">
+                        <div class="cell">
+
+                            <div class="instructions-ov">
+                                <p>First identify the enterprise systems for which you want to adjust access.
+                                </p>
+                                <p>You can
+                                    select the desired systems one of four ways:
+                                </p>
+                            </div>
+
+
+
+                            <ul class="tabs method-opts" data-tabs id="method-tabs">
+                                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Select by
+                                        topic area </a>
+                                </li>
+                                <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Select by name</a>
+                                </li>
+                                <li class="tabs-title"><a data-tabs-target="panel3" href="#panel3">Copy another user</a>
+                                </li>
+                                <li class="tabs-title"><a data-tabs-target="panel4" href="#panel4">Apply
+                                        template</a>
+                                </li>
+                            </ul>
+
+                            <div class="tabs-content method-opts-content" data-tabs-content="method-tabs">
+                                <div class="tabs-panel is-active" id="panel1">
+
+                                    <div class="picker-instruct">
+                                        <h2 class="picker">
+                                            Narrow your list of enterprise applications and reports by choosing relevant
+                                            topic areas:
+                                        </h2>
+                                        <p class="guide">Best
+                                            for setting up new hires or making multiple changes.
+                                        </p>
+                                    </div>
+
+
+                                    <div class="grid-x grid-margin-x topcat-group">
+                                        <div class="cell large-4 topcat capital">
+                                            <h3>Capital Programs</h3>
+
+                                            <div class="topcat-subs">
+                                                <fieldset class="choice-checklist checks">
+                                                    <legend>Select areas within research:</legend>
+                                                    <div><input type="checkbox" id="cp1"><label for="cp1">General
+                                                            capital programs</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="cp2"><label for="cp2">Space
+                                                            utilization</label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+
+                                        <div class="cell large-4 topcat finance">
+                                            <h3>Finance</h3>
+                                            <div class="topcat-subs">
+                                                <fieldset class="choice-checklist checks">
+                                                    <legend>Select areas within research:</legend>
+                                                    <div><input type="checkbox" id="f1"><label for="f1">Accounts
+                                                            payable</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="f2"><label for="f2">Accounts
+                                                            receivable</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="f3"><label for="f3">Budget</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="f4"><label for="f4">Fixed
+                                                            assets</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="f5"><label for="f5">General
+                                                            finance</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="f6"><label for="f6">General
+                                                            ledger</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="f7"><label for="f7">Grants and
+                                                            contracts</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="f8"><label
+                                                            for="f8">Purchasing</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="f9"><label for="f9">Travel and
+                                                            expense management</label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+
+                                        <div class="cell large-4 topcat hr">
+                                            <h3>Human Resources</h3>
+                                            <div class="topcat-subs">
+                                                <fieldset class="choice-checklist checks">
+                                                    <legend>Select areas within research:</legend>
+                                                    <div><input type="checkbox" id="hr1"><label for="hr1">Central HR
+                                                            functions</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="hr2"><label for="hr2">Central
+                                                            payroll
+                                                            functions</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="hr3"><label for="hr3">HR-Pay
+                                                            department access </label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="hr4"><label for="hr4">Time entry
+                                                            access </label>
+                                                    </div>
+
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class=" grid-x grid-margin-x topcat-group">
+                                        <div class="cell large-4 topcat research">
+                                            <h3>Research</h3>
+                                            <div class="topcat-subs">
+                                                <fieldset class="choice-checklist checks">
+                                                    <legend>Select areas within research:</legend>
+                                                    <div><input type="checkbox" id="r2"><label for="r2">Research
+                                                            administration and compliance</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="r1"><label for="r1">Sponsored
+                                                            research </label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div class="cell large-4 topcat student">
+                                            <h3>Student Information</h3>
+
+                                            <div class="topcat-subs">
+                                                <fieldset class="choice-checklist checks">
+                                                    <legend>Select areas within student information:
+                                                    </legend>
+                                                    <div><input type="checkbox" id="1"><label for="1">Academic
+                                                            history</label>
+                                                    </div>
+
+                                                    <div><input type="checkbox" id="2"><label for="2">Catalog and
+                                                            schedule</label>
+                                                    </div>
+
+                                                    <div><input type="checkbox" id="3"><label for="3">Financial
+                                                            aid</label>
+                                                    </div>
+
+                                                    <div><input type="checkbox" id="4"><label for="4">General learner
+                                                            and
+                                                            registration</label>
+                                                    </div>
+
+                                                    <div><input type="checkbox" id="5"><label for="5">General person
+                                                        </label>
+                                                    </div>
+
+                                                    <div><input type="checkbox" id="6"><label for="6">Recruiting and
+                                                            admissions</label>
+                                                    </div>
+                                                    <div><input type="checkbox" id="7"><label for="67">Test score
+                                                            administration</label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+
+                                        </div>
+                                        <!-- 
+                                        <div class="cell large-4 topcat">
+                                            <h3>Privileged &amp; Special Access</h3>
+                                            <div class="topcat-subs">
+                                                <fieldset class="choice-checklist checks">
+                                                    <legend>Select areas within special/privileged
+                                                        access:</legend>
+                                                    <div><input type="checkbox" id="sa1"><label
+                                                            for="sa1">Something</label>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+-->
+
+
+                                    </div>
+
+                                    <div class="process-step">
+                                        <button type="button" class="button">Continue</button>
+                                    </div>
+
+                                </div>
+                                <div class="tabs-panel" id="panel2">
+                                    <h2 class="picker">Search for a specific application, data source or
+                                        report</h2>
+                                    <p class="guide">
+                                        Best for adding or altering access to a single application.</p>
+
+
+                                    <div class="wrapper500">
+
+                                        <label for="list-of-apps">Select access profiles for:</label>
+                                        <select id="list-of-apps"
+                                            aria-label="Begin typing the name of an application or report">
+                                            <option value="" disabled selected hidden></option>
+
+                                            <option>Banner Student</option>
+                                            <option>iBuy</option>
+                                            <option>myDisclosures </option>
+                                        </select>
+                                        <div id="list-of-apps2" class="auto-hint" aria-hidden="true">Begin
+                                            typing
+                                            application or report name
+                                        </div>
+                                    </div>
+
+
+                                    <div class="process-step">
+                                        <button type="button" class="button">Continue</button>
+                                    </div>
+                                </div>
+                                <div class="tabs-panel" id="panel3">
+                                    <h2 class="picker">Copy another person's set of access rights to this
+                                        person</h2>
+                                    <p class="guide">Best for
+                                        position replacements. </p>
+
+
+
+                                    <div class="wrapper500">
+                                        <fieldset class="input-group">
+                                            <legend>Copy access of:</legend>
+                                            <span class="input-group-label">NetID or UIN</span>
+                                            <input class="input-group-field" type="text" id="copyfrom">
+
+                                            <div class="input-group-button">
+                                                <input type="submit" class="button secbtn" value="Enter">
+                                            </div>
+                                        </fieldset>
+                                    </div>
+
+
+
+
+
+
+
+
+                                </div>
+                                <div class="tabs-panel" id="panel4">
+                                    <h2 class="picker">Apply a saved template to this person</h2>
+                                    <p class="guide">Best for position replacements or recreating custom
+                                        access
+                                        settings.
+                                    </p>
+
+
+                                    <label for="templates">Select a template to apply:</label>
+                                    <select id="templates">
+                                        <option>Student advisor</option>
+                                        <option>Pcard user</option>
+                                        <option>Some other template</option>
+
+                                    </select>
+
+                                    <div class="process-step">
+                                        <button type="button" class="button">Continue</button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+
+                </section>
+            </div>
+
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="helpbar">
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="cell">
+                        <h2 class="show-for-sr">Support</h2>
+                        <ul class="helpbar-links">
+                            <li class="help-center"><a href="jj"><span>USC Help Center</span></a></li>
+                            <li class="lookup"><a href="fg"><span>USC Lookup</span></a></li>
+                            <li class="ticket"><a href="df"><span>File a support
+                                        ticket</span></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="grid-container">
+                <div class="grid-x grid-padding-x">
+                    <div class="large-12 cell">
+                        &copy;
+                        <script>document.write(new Date().getFullYear());
+                        </script> University of Illinois Board of Trustees | <a
+                            href="https://www.vpaa.uillinois.edu/resources/web_privacy">Privacy policy</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/what-input/dist/what-input.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>
+    <script type="text/javascript" src="js/accessible-autocomplete.min.js"></script>
+    <script src="js/app.js"></script>
+
+    <script>
+        accessibleAutocomplete.enhanceSelectElement({
+            selectElement: document.querySelector('#list-of-apps')
+        });
+    </script>
+</body>
+
+</html>
